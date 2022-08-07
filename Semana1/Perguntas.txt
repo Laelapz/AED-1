@@ -1,0 +1,36 @@
+        Ponteiros:
+(Ex1)
+12. Faça um programa que leia três valores inteiros e chame uma funcão que receba estes 3
+valores de entrada e retorne eles ordenados, ou seja, o menor valor na primeira variável,
+o segundo menor valor na variável do meio, e o maior valor na última variável. A funcão
+deve retornar o valor 1 se os três valores forem iguais e 0 se existirem valores diferentes.
+Exibir os valores ordenados na tela.
+
+
+
+
+        Alocação Dinamica:
+(Ex2)
+1. Crie um programa que:
+(a) Aloque dinamicamente um array de 5 numeros inteiros,
+(b) Peça para o usuario digitar os 5 números no espaço alocado,
+(c) Mostre na tela os 5 números,
+(d) Libere a memória alocada.
+
+(Ex3)
+11. Crie um programa que declare uma estrutura (registro) para o cadastro de alunos.
+(a) Deverão ser armazenados, para cada aluno: matricula, sobrenome (apenas um) e
+ano de nascimento.
+(b) Ao início do programa, o usuario deverá informar o número de alunos que serão
+armazenados
+(c) O programa deverá alocar dinamicamente a quantidade necessária de memória
+para armazenar os registros dos alunos.
+(d) O programa deverá pedir ao usuário que entre com as informacões dos alunos.
+
+
+
+
+        Recursão:
+(Ex4)
+2. Faça uma funcão recursiva que calcule e retorne o fatorial de um número inteiro N
+(e) Ao final, mostrar os dados armazenados e liberar a memória alocada. 
