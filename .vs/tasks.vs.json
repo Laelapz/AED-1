@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarefa-Ex4",
+      "appliesTo": "Semana1/Ex4.c",
+      "type": "launch"
+    }
+  ]
+}

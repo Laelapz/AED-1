@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int Fat(int fatNum){
-    if(fatNum == 1 || fatNum == 0) return;
+    if(fatNum == 1 || fatNum == 0) return 1;
 
     return fatNum * Fat(fatNum-1);
 }
