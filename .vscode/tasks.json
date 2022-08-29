@@ -5,6 +5,8 @@
         "label": "g++.exe build active file",
         "command": "C:\\MinGW\\bin\\g++.exe",
         "args": [
+          "-Wall",
+          "-Werror",
           "-g",
           "${file}",
           "-o",
@@ -19,8 +21,6 @@
         "label": "g++ build & run active file",
         "command": "C:\\MinGW\\bin\\g++.exe",
         "args": [
-          "-Wall",
-          "-Werror",
           "${file}",
           "-o",
           "${fileDirname}\\${fileBasenameNoExtension}.exe"

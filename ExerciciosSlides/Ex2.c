@@ -5,7 +5,7 @@
 
 //gcc -Wall -Werror -g c:\Users\johnn\Documents\Facu\AED\SlideSemana1\Ex2.c -o SlideSemana1\Ex2.exe
 
-void AdicionarNome(char* nomes)
+char* AdicionarNome(char* nomes)
 {
     char nome[20];
 
@@ -23,6 +23,7 @@ void AdicionarNome(char* nomes)
     nomes[_msize(nomes) - 1] = '\n';
 
     printf("Tamanho da memoria alocada: %d\n", _msize(nomes)-1);
+    return nomes;
 }
 
 void RemoverNome(char* nomes, int index)
@@ -69,7 +70,7 @@ int main()
 {
     int op;
     char* nomes = (char *)malloc(sizeof(char));
-    char* inicioNomes = nomes;
+    
 
     do{
         printf("\nSeleciona a opcao:\n\t1-Adicionar nome\n\t2-Remover nome\n\t3-Listar\n\t4-Sair\n");
@@ -77,7 +78,7 @@ int main()
         
         if(op == 1)
         {
-            AdicionarNome(nomes);
+            nomes = AdicionarNome(nomes);
         }
         else if(op == 2)
         {
@@ -87,13 +88,12 @@ int main()
         }
         else if( op == 3)
         {
-            Listar(inicioNomes);
+            Listar(nomes);
         }
 
     }while (op != 4);
     
     free(nomes);
-    free(inicioNomes);
 
     return 0;
 }
